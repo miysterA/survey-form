@@ -1,0 +1,160 @@
+<link rel="stylesheet" href="style.css">
+<h1 id="title">Survey Form</h1>
+<div id="form-body">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form action="" method="GET" id="survey-form">
+        <div class="perso">
+            <div class="block-left">
+                    <label for="name" id="name-label">*Name :</label>
+            </div>
+            <div class="block-right">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="perso">
+            <div class="block-left">
+                    <label for="email" id="email-label">*Email :</label>
+            </div>
+            <div class="block-right">
+                    <input type="email" id="email" placeholder="Enter your Email" pattern=".+@globex.com" required>
+            </div>
+                
+                
+        </div>
+        <div class="perso">
+            <div class="block-left">
+                    <label for="Age" id="number-label">*Age :</label>
+            </div>
+            <div class="block-right">
+                    <input type="number" id="number" min="1" max="100" placeholder="Age" required>
+            </div>
+        </div>
+         <div class="perso">
+             <div class="block-left">
+                    <label for="dropdown" id="select-label">Which option best describes your current role?</label>
+             </div>
+             <div class="block-right">
+                    <select name="currentrole" id="dropdown">
+                            <option value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="prefer">Prefer No to say</option>
+                            <option value="other">Other</option>
+                        </select>
+             </div>
+                
+                
+        </div>
+      <div class="perso">
+                <div class="block-left">
+                        <label for="radio-group" id="select-label">
+                            * How likely is that you would recommend freeCodeCamp to a friend?
+                        </label>
+                </div>
+                <div class="block-right">
+                        <div id="radio">
+                                <ul>
+                                    <li>
+                                            <input type="radio" value="definetely" name="radio-group">
+                                            <label >Definitely</label>
+                                    </li>
+                                    <li>
+                                            <input type="radio" value="maybe" name="radio-group">
+                                            <label >Maybe</label>
+                                    </li>
+                                    <li>
+                                            <input type="radio" value="not sure" name="radio-group">
+                                            <label >Not sure</label>
+                                    </li>
+                                </ul>
+                        </div>
+                </div>
+                
+        </div>
+      <div class="perso">
+          <div class="block-left">
+                <label for="dropdown" id="select-label">What do you like most in FCC:</label>
+          </div>
+          <div class="block-right">
+                <select name="currentrole" id="dropdown" placeholder="Select an option">
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="Opensource">Open source</option>
+                        <option value="other">Other</option>
+                    </select>
+          </div>    
+        </div>
+      <div class="perso">
+               <div class="block-left">
+                    <label for="checkbox-group" id="select-label">
+                            * Things that should be improved in the future
+                                (Check all that apply):
+                    </label>
+               </div>
+               <div class="block-right">
+                    <div id="checkbox">
+                            <ul>
+                                <li>
+                                        <input type="checkbox" value="1" name="checkbox-group">
+                                        <label >Front End Projects</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="2" name="checkbox-group">
+                                        <label > Back End Projects</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="3" name="checkbox-group">
+                                        <label >Data Visualization</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="4" name="checkbox-group">
+                                        <label >Challenges</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="5" name="checkbox-group">
+                                        <label >Open Source Community</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="6" name="checkbox-group">
+                                        <label >Gitter help rooms</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="7" name="checkbox-group">
+                                        <label >Videos</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="8" name="checkbox-group">
+                                        <label >City Meetups</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="9" name="checkbox-group">
+                                        <label >Forum</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="10" name="checkbox-group">
+                                        <label >Wiki</label>
+                                </li>
+                                <li>
+                                        <input type="checkbox" value="8" name="checkbox-group">
+                                        <label >Additional Courses</label>
+                                </li>
+                            </ul>  
+                        </div>
+               </div>
+                
+        </div>
+      <div class="perso">
+            <div class="block-left">
+                <label for="text-area">Any Comments or Suggestions?</label>
+            </div>
+            <div class="block-right">
+                <textarea id="story" name="story" rows="5" cols="33">Enter your comment here...</textarea>
+            </div>
+        
+      </div>
+      <button class="favorite styled" type="submit" id="submit">
+         submit
+      </button>
+    </form>
+</div>
